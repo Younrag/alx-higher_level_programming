@@ -9,6 +9,7 @@ class Square:
 
      @property
     def size(self):
+        """Property for the length of a side squqre"""
         return (self.__size)
 
     @size.setter
