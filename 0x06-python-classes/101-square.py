@@ -53,6 +53,7 @@ class Square:
             print("")
 
     def __str__(self):
+        """Define as print()"""
         if self.__size != 0:
             [print("") for i in range(0, self.__position[1])]
         for i in range(0, self.__size):
