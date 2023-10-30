@@ -4,7 +4,6 @@
 
 class Rectangle:
     """Represent a rectangle."""
-	
     number_of_instances = 0
     print_symbol = "#"
 
@@ -44,6 +43,7 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
     def area(self):
         """Return the area of the Rectangle."""
         return (self.__width * self.__height)
@@ -54,7 +54,7 @@ class Rectangle:
             return (0)
         return ((self.__width * 2) + (self.__height * 2))
 
-@staticmethod
+    @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """Return the Rectangle with the greater area."""
         if not isinstance(rect_1, Rectangle):
@@ -65,7 +65,7 @@ class Rectangle:
             return (rect_1)
         return (rect_2)
 
-@classmethod
+    @classmethod
     def square(cls, size=0):
         """Return a new Rectangle with width and height equal to size."""
         return (cls(size, size))
@@ -74,11 +74,14 @@ class Rectangle:
         """Represents the rectangle with the # character."""
         if self.__width == 0 or self.__height == 0:
             return ("")
-        return ((str(self.print_symbol) * self.width + "\n") * self.height)[:-1]
+        return ((str(self.print_symbol) * self.width + "\n") *
+                self.height)[:-1]
+
     def __repr__(self):
         """Return the string representation of the Rectangle."""
-        return "Rectangle(" + str(self.__width) ", " + str(self.__height) + ")"
+        return "Rectangle(" + str(self.width) ", " + str(self.height) + ")"
+
     def __del__(self):
-	"""Print a message for every deletion of a Rectangle."""
+        """Print a message for every deletion of a Rectangle."""
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
