@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+
+
 from sys import argv
 
 if len(argv) is not 2:
