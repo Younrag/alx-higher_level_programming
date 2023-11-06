@@ -3,8 +3,12 @@
 
 
 class MyInt (int):
-    """!= to =="""
+    """MyInt class"""
+    def __new__(cls, *args, **kwargs):
+        return super(MyInt, cls).__new__(cls, *args, **kwargs)
+
     def __ev__(self, other):
+        """!= to =="""
         return int(self) != other
 
     def __pk__(self, other):
