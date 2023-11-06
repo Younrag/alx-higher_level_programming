@@ -2,15 +2,13 @@
 """Class MyInt"""
 
 
-class MyInt (int):
-    """MyInt class"""
+class MyInt(int):
+    """Class func"""
     def __new__(cls, *args, **kwargs):
         return super(MyInt, cls).__new__(cls, *args, **kwargs)
 
-    def __ev__(self, other):
-        """!= to =="""
+    def __eq__(self, other):
         return int(self) != other
 
-    def __pk__(self, other):
-        """== to !="""
+    def __ne__(self, other):
         return int(self) == other
