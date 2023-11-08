@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 
 def facto(k):
+    """
+    factorial n
+    """
     fact = 1
     for i in range(1, k):
         fact = fact * (i + 1)
@@ -8,6 +11,7 @@ def facto(k):
 
 
 def pascal_triangle(n):
+    """Triangle Pascal"""
     L = []
 
     if n <= 0:
