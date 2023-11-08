@@ -6,8 +6,10 @@ def facto(k):
         fact = fact * (i + 1)
     return fact
 
+
 def pascal_triangle(n):
     L = []
+
     if n <= 0:
         return L
     else:
