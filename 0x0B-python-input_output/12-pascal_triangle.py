@@ -21,7 +21,7 @@ def pascal_triangle(n):
     else:
         for i in range(n):
             row = []
-            for j in range(i):
+            for j in range(i + 1):
                 c = facto(i) / (facto(j) * facto(i - j))
                 row.append(int(c))
             L.append(row)
