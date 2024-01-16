@@ -6,11 +6,10 @@ const yes = 'Arguments found';
 let count = 0;
 // print process.argv
 argv.forEach((val, index) => {
-	count++;
+  count++;
 });
-if (count == 2){
-	console.log(no);
-}
-else if(count >= 3) {
-	console.log(yes);
+if (count === 2) {
+  console.log(no);
+} else if (count >= 3) {
+  console.log(yes);
 }
