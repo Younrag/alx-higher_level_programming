@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-
+"""changes the name of a State object from the database hbtn_0e_6_usa"""
 import sqlalchemy as db
 from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
