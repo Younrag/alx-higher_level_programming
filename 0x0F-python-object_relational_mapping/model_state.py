@@ -8,6 +8,7 @@ Base = declarative_base()
 
 
 class State(Base):
+    """Table states"""
     def __init(self):
         pass
     __tablename__ = 'states'
