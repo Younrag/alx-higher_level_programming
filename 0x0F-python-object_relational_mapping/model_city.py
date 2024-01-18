@@ -10,7 +10,7 @@ Base = declarative_base()
 
 
 class City(Base):
-
+    """imported from model_state"""
     def __init(self):
         pass
 
