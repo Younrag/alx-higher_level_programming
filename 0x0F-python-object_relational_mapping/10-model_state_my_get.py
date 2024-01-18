@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""prints the State object with the name passed as argument from the database"""
+"""prints the State object with the name passed as argument from the db"""
 import sqlalchemy as db
 from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
