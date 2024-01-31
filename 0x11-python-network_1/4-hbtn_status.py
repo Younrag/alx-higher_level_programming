@@ -1,13 +1,11 @@
 #!/usr/bin/python3
-"""url fetching script in python"""
+"""Python script"""
 
 import requests
 
-url = 'https://intranet.hbtn.io/status'
 
 
-if __name__ == '__main__':
-    req = requests.get(url)
-    print("Body response:")
-    print("\t- type: {}".format(type(req.text)))
-    print("\t- content: {}".format(req.text))
+f __name__ == "__main__":
+    r = requests.get('https://alx-intranet.hbtn.io/status')
+    t = r.text
+    print('Body response:\n\t- type: {}\n\t- content: {}'.format(type(t), t))
